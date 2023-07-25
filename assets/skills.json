@@ -1,0 +1,96 @@
+{
+  "skills": [
+    {
+      "title": "HTML",
+      "icon": "./img/html-5.png"
+    },
+    {
+      "title": "CSS",
+      "icon": "./img/css-3.png"
+    },
+    {
+      "title": "JavaScript",
+      "icon": "./img/js.png"
+    },
+    {
+      "title": "Sass",
+      "icon": "url_a_imagen_sass"
+    },
+    {
+      "title": "Bootstrap",
+      "icon": "url_a_imagen_bootstrap"
+    },
+    {
+      "title": "React",
+      "icon": "url_a_imagen_react"
+    },
+    {
+      "title": "Node.js",
+      "icon": "./img/nodejs.png"
+    },
+    {
+      "title": "PHP",
+      "icon": "./img/php.png"
+    },
+    {
+      "title": "Laravel",
+      "icon": "url_a_imagen_laravel"
+    },
+    {
+      "title": "MySQL",
+      "icon": "./img/mysql.png"
+    },
+    {
+      "title": "PostgreSQL",
+      "icon": "./img/postgre.png"
+    }
+  ],
+
+  "proyects": [
+    {
+      "title": "Spotify Clon",
+      "description": "Clon, del famoso Spotify, donde se consumio una Api, y se realizo un reproductor, para poder reproducir las canciones, asi como filtros y busquedas, de canciones favoritas, si el usuario esta interesado en tenerlas.",
+      "img": "",
+      "technologies": ["HTML", "CSS", "Bootstrap", "React", "APIs"]
+    },
+    {
+      "title": "YouTube Clon",
+      "description": "Clon del famoso Youtube, en donde se consumio su Api oficial, se realizo el reproductor, para ver los videos, ademas el mismo busca por videos, tambien, es posible el guardarlos en el local storage, los videos favoritos, para poder acceder a el",
+      "img": "",
+      "technologies": ["HTML", "CSS", "React", "APIs", "Axios", "Redux"]
+    },
+    {
+      "title": "Gimnasio App",
+      "description": "",
+      "img": "",
+      "technologies": ["HTML", "CSS", "Tailwind", "React", "APIs"]
+    },
+
+    {
+      "title": "Movies App",
+      "description": "Se consumio una Api de peliculas, en donde podemos buscar, las peliculas mas recientes, tambien por los generos, que estan ofrecidos en el sistema, ademas de poder buscarlas, ya si nos sabemos el nombre, ademas de poder ver, el trailer de esta pelicula, si la misma lo tiene en Youtube, totalmente gratis.",
+      "img": "",
+      "technologies": ["HTML", "CSS", "Bootstrap", "React", "APIs"]
+    },
+
+    {
+      "title": "React Dashboard",
+      "description": "Se realizo, un dashboard, con distintos elementos, visuales, tanto para el manejo de fechas, como el de disitintas tareas administrativas, para administradores de alguna aplicacion, ya quedaria es ajustarlo y conectarlo a un backend real, para poder hacer las interacciones con la base de datos respectivamente.",
+      "img": "",
+      "technologies": ["HTML", "CSS", "Bootstrap", "React"]
+    },
+
+    {
+      "title": "Halo Web",
+      "description": "Pagina web, realizada con css puro, y html inspirada en el sitio web oficial de Halo, completamente responsive, en donde muestro mis habilidades de maquetacion.",
+      "img": "",
+      "technologies": ["HTML", "CSS", "LocalStorage"]
+    },
+    {
+      "title": "Dashboard",
+      "description": "Panel de Administracion, el cual estaba pensado para un sistema de carnetizacion, el cual, no se pudo completar, pero quedo el fronted, avazando, tiene el poder guardar tu coior favorito, en el localstorage, ademas de ser responsive y mostrar los datos, de los usuarios, solo queda el conectarlo a un backend para poder implementarlo.",
+      "img": "",
+      "technologies": ["HTML", "CSS", "LocalStorage", "Manejo del DOM"]
+    }
+  ]
+}

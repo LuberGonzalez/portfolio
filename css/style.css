@@ -1,0 +1,287 @@
+:root {
+  /* Colores */
+  --color-primary: rgb(34, 57, 61);
+  --color-secondary: #fc0;
+  --color-alternaive: #f0c;
+
+  --color-background: linear-gradient(
+    90deg,
+    rgb(128, 123, 211) 0%,
+    rgba(7, 99, 227, 1) 51%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  --color-panel: #120455;
+
+  --color-white: #fff;
+  --color-black: #000;
+
+  --color-focus-input: red;
+
+  --color-error: hsl(0, 80%, 60%);
+  --color-warning: hsl(60, 80%, 60%);
+  --color-success: hsl(120, 80%, 60%);
+}
+
+/* Letras Y Tipografia */
+:root {
+  --font-family: "Roboto", sans-serif;
+
+  --font-normal: 300;
+  --font-bold: 700;
+}
+/*  Alturas Y Anchos */
+:root {
+  --heigth-header: 5rem;
+}
+
+/* Z Index */
+:root {
+  --z-tooltip: 1;
+  --z-fixed: 10;
+  --z-max: 100;
+  --z-max-max: 1000;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-family: var(--font-family);
+}
+
+/* Santo Grial */
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-header,
+.footer {
+  flex: 0 0 auto;
+}
+
+main {
+  flex: 1;
+}
+
+/* Santo Grial FIN */
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+input {
+  outline: none;
+  border: 2px solid #fff;
+}
+
+input:focus {
+  border: 2px solid steelblue;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+[class*="button--"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  align-self: flex-end;
+  color: rgb(14, 13, 13);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+
+  /* Efecto */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Skill Section */
+
+main{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  flex: 1 1 calc(250px - 1rem);
+  cursor: pointer;
+  overflow: hidden;
+
+  /* Estilos para el efecto hover */
+  transition: transform 0.3s ease;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+
+.skill-title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.skill img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Skill Section FIN*/
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 1rem;
+}
+
+/* Pagina de error */
+
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #f8f8f8; */
+  width: 500px;
+  height: 500px;
+}
+
+.error-page__container {
+  text-align: center;
+}
+
+.error-page__title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+.error-page__message {
+  font-size: 18px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Pagina de error FIN */
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    /* background-color:red; */
+    gap:1rem;
+}
+
+
+.project-card {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    flex: 1 1  calc(220px 1 -1rem);
+    width: 250px;
+  }
+  
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .project__title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .project__message {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .project__tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .project__tag {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 4px 8px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .project__button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4c9aff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project__button:hover {
+    background-color: #3683e6;
+  }
+  
