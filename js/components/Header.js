@@ -8,7 +8,7 @@ export const Header = () => {
   $header.innerHTML = `
 
     <div class="main-logo">
-        <a class="main-link" href="#/"><img src="" alt="logo" /> </a>
+        <a class="main-link" href="#${ROUTES.HOME}"><img src="" alt="logo" /> </a>
     </div>
 
     <ul class="main-menu">

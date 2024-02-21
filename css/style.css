@@ -120,6 +120,19 @@ button {
   /* Efecto */
   transition: all 0.3s ease-in-out;
 }
+/* Main Header */
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: red;
+
+}
+
+/* Main Header FIn*/
+
 
 /* Skill Section */
 
@@ -285,3 +298,69 @@ main{
     background-color: #3683e6;
   }
   
+
+
+
+
+  /* Estilos generales */
+.banner {
+  background-color: #f2f2f2;
+  /* padding: 30px 0; */
+  width: 100%;
+  min-height: 70vh;
+}
+
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner__left {
+  margin-bottom: 20px;
+}
+
+.banner__left img {
+  width: 100%;
+  max-width: 300px; /* Ajusta el tamaño de la imagen según tus preferencias */
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.banner__right {
+  text-align: center;
+}
+
+.banner__text {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.banner__social-icons {
+  margin-top: 20px;
+}
+
+/* Estilos para los iconos de redes sociales */
+.banner__social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: #0077b5; /* Color de LinkedIn */
+}
+
+.banner__social-icon--github {
+  color: #4078c0; /* Color de GitHub */
+}
+
+/* Estilos para dispositivos pequeños */
+@media (max-width: 768px) {
+  .banner__content {
+    flex-direction: column;
+  }
+
+  .banner__left img {
+    max-width: 200px; /* Ajusta el tamaño de la imagen para dispositivos pequeños */
+  }
+}

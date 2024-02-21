@@ -17,12 +17,15 @@ export const ROUTES = {
 // Función para cargar la página correspondiente según la ruta
 export function loadPages() {
   const route = window.location.hash.substr(2) || '/'; // Obtenemos la ruta después del '#', ignorando el primer '/'
-
   console.log(route);
+
+
 
   switch (route) {
     case ROUTES.HOME:
+      console.log(route);
       Home();
+      break;
       case ROUTES.CONTACT:
       Contact();
       break;
